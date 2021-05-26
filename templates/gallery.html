@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <meta charset="UTF-8">
+        <title>GALERIA</title>
+        <style>
+            .rozmiar{
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body style="background-color: lightgray;">
+        <h1>GALERIA</h1>
+        <div>
+            <img class="rozmiar" src="{{ url_for('static', filename='img/1.jpg') }}">
+            <img class="rozmiar" src="{{ url_for('static', filename='img/3.jpg') }}">
+        </div>
+        <div>
+            <img class="rozmiar" src="{{ url_for('static', filename='img/2.jpg') }}">
+            <img class="rozmiar" src="{{ url_for('static', filename='img/4.jpg') }}">
+        </div>
+
+        <a class="link" href="/">STRONA GŁÓWNA</a>
+    </body>
